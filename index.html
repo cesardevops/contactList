@@ -76,8 +76,8 @@
             var textnode = json.alumnos[prop].nombre;         // Create a text node
             
             var a = document.createElement("a");
-            //a.href = " https://wa.me/51"+textnumber;
-            a.href = getLinkWhastapp(textnumber, yourMessage);
+            a.href = " https://wa.me/51"+textnumber+ "/?text=I" + yourMessage;
+            //a.href = getLinkWhastapp(textnumber, yourMessage);
             a.textContent = textnode;
             node.appendChild(a);                              // Append the text to <li>
             
