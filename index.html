@@ -48,15 +48,25 @@
 
     </ul>
     
+
+    <a  target="_blank" title="Contact Us On WhatsApp" href="https://web.whatsapp.com/send?phone=+919581880892&amp;text=Hi, I would like to get more information.." class="whatsapplink hidemobile" style="background-color:#2DC100">
+        <i class="fa fa-fw fa-whatsapp" style="color:#fff"></i>
+        <span style="color:#fff">
+            Contact Us On WhatsApp        </span>
+    </a>
     <script>
 
 
 
+    var yourMessage = "unete al grupo de dibujo para ingenieria en el siguiente enlace: https://chat.whatsapp.com/DjHBoD1CDAC4RbCX9qA3q8"
+
+
     $.getJSON( "cursos.json", function( json ) {
-        console.log(json.curso);
+        //console.log(json.curso);
         //console.log(json.alumnos);
 
         for (const prop in json.alumnos) {
+
 
             console.log(prop +": "+json.alumnos[prop].nombre + " - "+  json.alumnos[prop].numero);
 
@@ -66,7 +76,8 @@
             var textnode = json.alumnos[prop].nombre;         // Create a text node
             
             var a = document.createElement("a");
-            a.href = " https://wa.me/51"+textnumber;
+            //a.href = " https://wa.me/51"+textnumber;
+            a.href = getLinkWhastapp(textnumber, yourMessage);
             a.textContent = textnode;
             node.appendChild(a);                              // Append the text to <li>
             
@@ -75,7 +86,27 @@
         
         }
     });
+   
     
+
+
+    // https://api.whatsapp.com/send?phone=+{{ *YOURNUMBER* }}&text=%20{{ *YOUR MESSAGE* }}
+
+
+    // %20 mean space in link
+    // If you already had an array then you just join them with '%20'
+    // easy right
+
+    function getLinkWhastapp(number, message) {
+    number = this.yourNumber
+    message = this.yourMessage.split(' ').join('%20')
+
+    res = 'https://api.whatsapp.com/send?phone=' + number + '&text=%20' + message;
+    return res;
+    }
+
+    getLinkWhastapp()
+
 
 
     </script>
