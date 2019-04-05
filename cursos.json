@@ -1,0 +1,86 @@
+{
+    "curso": "Dibujo para ingeniería",
+    "alumnos": {
+      "1" : {
+        "nombre" : "Tony Lucas Dominguez",
+        "numero" : "947053297"
+      },
+      "2" : {
+        "nombre" : "Noelia Nino Correa",
+        "numero" : "997532331"
+      },
+      "3" : {
+        "nombre" : "Daniel Espinal Pando",
+        "numero" : "982111924"
+      },"4" : {
+        "nombre" : "Rolando Ipanaque",
+        "numero" : "956541997"
+      },"5" : {
+        "nombre" : "Patricio Chipana",
+        "numero" : "955173797"
+      },"6" : {
+        "nombre" : "Elvis BArbaron",
+        "numero" : "960948414"
+      },"7" : {
+        "nombre" : "Brayan Huamay",
+        "numero" : "946221669"
+      },"8" : {
+        "nombre" : "Ken Huaripuma",
+        "numero" : "983569769"
+      },"9" : {
+        "nombre" : "Nestor ALban",
+        "numero" : "998518865"
+      },"10" : {
+        "nombre" : "REnzo damos romero",
+        "numero" : "989523430"
+      },"11" : {
+        "nombre" : "WIllian HUamani",
+        "numero" : "956741736"
+      },"12" : {
+        "nombre" : "campos flavio",
+        "numero" : "948599139"
+      },"13" : {
+        "nombre" : "gerson araucano",
+        "numero" : "981500629"
+      },"14" : {
+        "nombre" : "Floriana soto ALvarado",
+        "numero" : "946030971"
+      },"15" : {
+        "nombre" : "pacheco sanchez kevin",
+        "numero" : "964718109"
+      },"16" : {
+        "nombre" : "carlos fernandez",
+        "numero" : "966908598"
+      },"17" : {
+        "nombre" : "Katherin Luque",
+        "numero" : "941623270"
+      },"18" : {
+        "nombre" : "sebastian vega",
+        "numero" : "993749776"
+      },"19" : {
+        "nombre" : "Gabriela zarate",
+        "numero" : "924794671"
+      },"20" : {
+        "nombre" : "yessenia huaman",
+        "numero" : "966468905"
+      },"21" : {
+        "nombre" : "jhanina condori",
+        "numero" : "990468338"
+      },"22" : {
+        "nombre" : "Smith melgarejo",
+        "numero" : "942303203"
+      },"23" : {
+        "nombre" : "luis miguel ortiz vera",
+        "numero" : "924751964"
+      },"24" : {
+        "nombre" : "melendez daniel",
+        "numero" : "925383706"
+      },"25" : {
+        "nombre" : "pairazaman mathew",
+        "numero" : "917055594"
+      },"26" : {
+        "nombre" : "abel hanz bolivar",
+        "numero" : "953254990"
+      }
+    }
+  }

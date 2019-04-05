@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+    body{
+        background: #051e3e;
+    }
+    ul {
+        margin: auto;
+    }
+    ul li{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 15px;
+    }
+    a{
+        display: block;
+        border-radius: 4px;
+        border: 2px solid #851e3e;
+        line-height: 20px;
+        background: #451e3e;
+        color: azure;
+        max-width: 400px;
+        padding: 1em;
+        text-decoration: none;
+    }
+
+    a.ok{
+        background: #851e3e;
+    }
+
+    </style>
+    
+    <ul id="myList">
+
+    </ul>
+    
+    <script>
+
+
+
+    $.getJSON( "cursos.json", function( json ) {
+        console.log(json.curso);
+        //console.log(json.alumnos);
+
+        for (const prop in json.alumnos) {
+
+            console.log(prop +": "+json.alumnos[prop].nombre + " - "+  json.alumnos[prop].numero);
+
+            var node = document.createElement("li");                 // Create a <li> node
+
+            var textnumber = json.alumnos[prop].numero;         // Create a text node
+            var textnode = json.alumnos[prop].nombre;         // Create a text node
+            
+            var a = document.createElement("a");
+            a.href = " https://wa.me/51"+textnumber;
+            a.textContent = textnode;
+            node.appendChild(a);                              // Append the text to <li>
+            
+            document.getElementById("myList").appendChild(node);
+        
+        
+        }
+    });
+    
+
+
+    </script>
+
+
+
+</body>
+</html>
