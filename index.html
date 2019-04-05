@@ -58,7 +58,7 @@
 
 
 
-    var yourMessage = "unete al grupo de dibujo para ingenieria en el siguiente enlace: https://chat.whatsapp.com/DjHBoD1CDAC4RbCX9qA3q8"
+    var yourMessage = "únete al grupo de dibujo para ingeniería en el siguiente enlace: https://chat.whatsapp.com/DjHBoD1CDAC4RbCX9qA3q8"
 
 
     $.getJSON( "cursos.json", function( json ) {
@@ -76,7 +76,7 @@
             var textnode = json.alumnos[prop].nombre;         // Create a text node
             
             var a = document.createElement("a");
-            a.href = " https://wa.me/51"+textnumber+ "/?text=I" + yourMessage;
+            a.href = " https://wa.me/51"+textnumber+ "/?text=" + yourMessage;
             //a.href = getLinkWhastapp(textnumber, yourMessage);
             a.textContent = textnode;
             node.appendChild(a);                              // Append the text to <li>
